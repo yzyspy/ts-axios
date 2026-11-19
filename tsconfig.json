@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",          // 编译目标，Node.js 20+ 支持 ES2022
+    "module": "Node20",          // 使用 Node.js 20 的模块系统行为
+    "moduleResolution": "Node16",
+    "outDir": "./dist",          // 编译后 .js 文件的输出目录
+    "rootDir": "./src",          // 源代码 .ts 文件的根目录
+    "strict": true,              // 开启所有严格类型检查，强烈推荐
+    "esModuleInterop": true,     // 改善 CommonJS 与 ES 模块的互操作性
+    "skipLibCheck": true,        // 跳过对第三方声明文件的类型检查，加快构建
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,           // 生成 source map，方便调试
+    "isolatedModules": true      // 确保每个文件能独立安全地转译
+  },
+  "include": ["src/**/*"],       // 包含 src 目录下的所有文件
+  "exclude": ["node_modules", "dist"]
+}
